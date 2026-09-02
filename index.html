@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>구전공학과소개</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 로고 컨테이너 -->
+  <div class="logo-container">
+    <a href="https://school.gyo6.net/gnet/main.do?sysId=gnet" target="_blank">
+      <img src="logo.png" alt="학교 로고" class="logo">
+    </a>
+    <a href="https://school.gyo6.net/gnet/main.do?sysId=gnet" target="_blank">
+      <img src="logo.png" alt="학교 로고" class="logo">
+    </a>
+  </div>
+
+<h1>레전드구전공학과들</h1>
+  <img src="main.png" alt="메인 이미지" class="main-img">
+
+  <div class="dept-container">
+    <!-- 전자과 카드 (두 칸 차지) -->
+    <div class="dept-card full">
+      <h2>전자과</h2>
+      <button class="btn" onclick="showDept('circuit')">전자회로설계전공</button>
+      <button class="btn" onclick="showDept('system')">전자시스템제어전공</button>
+    </div>
+
+    <!-- 메카트로닉스과 카드 (두 칸 차지) -->
+    <div class="dept-card full">
+      <h2>메카트로닉스과</h2>
+      <button class="btn" onclick="showDept('automation')">자동화시스템전공</button>
+    </div>
+  </div>
+
+  <div id="deptInfo" class="content">
+    버튼을 눌러 전공 소개를 확인하세요.
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
